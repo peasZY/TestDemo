@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/audioLayer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/tk_default_bg"
+                android:visibility="gone">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/caller"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tk_incoming_caller_height"
+            android:layout_marginLeft="@dimen/tk_incoming_caller_margin_left"
+            android:layout_marginRight="@dimen/tk_incoming_caller_margin_right"
+            android:layout_marginTop="@dimen/tk_incoming_caller_margin_top"
+            android:ellipsize="end"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_horizontal"
+            android:lines="1"
+            android:textColor="@color/tk_text_white"
+            android:textSize="@dimen/tk_incoming_caller_text_size"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/call_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/tk_incoming_sitename_margin_top"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:textColor="@color/tk_text_white"
+            android:textSize="@dimen/tk_incoming_sitename_text_size"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/tk_people_margin_top">
+
+            <ImageView
+                android:id="@+id/muteIcon"
+                android:layout_width="@dimen/tk_big_icon_size"
+                android:layout_height="@dimen/tk_big_icon_size"
+                android:layout_marginLeft="@dimen/tk_big_icon_margin"
+                android:layout_marginRight="@dimen/tk_big_icon_margin"
+                android:visibility="gone"/>
+
+            <!--        android:src="@drawable/audio_call_mute"-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/volumnMuteIcon"
+        android:layout_width="@dimen/tk_big_icon_size"
+        android:layout_height="@dimen/tk_big_icon_size"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/tk_big_icon_margin"
+        android:layout_marginTop="@dimen/tk_big_icon_top"
+        android:src="@drawable/tk_icon_volume_silence"
+        android:visibility="gone"/>
+
+</RelativeLayout>

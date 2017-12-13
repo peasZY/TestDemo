@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    <item android:drawable="@drawable/bs_dialog_loading1" android:duration="@integer/bs_frame_duration" />
+    <item android:drawable="@drawable/bs_dialog_loading2" android:duration="@integer/bs_frame_duration" />
+    <item android:drawable="@drawable/bs_dialog_loading3" android:duration="@integer/bs_frame_duration" />
+    <item android:drawable="@drawable/bs_dialog_loading4" android:duration="@integer/bs_frame_duration" />
+    <item android:drawable="@drawable/bs_dialog_loading5" android:duration="@integer/bs_frame_duration" />
+    <item android:drawable="@drawable/bs_dialog_loading6" android:duration="@integer/bs_frame_duration" />
+    <item android:drawable="@drawable/bs_dialog_loading7" android:duration="@integer/bs_frame_duration" />
+    <item android:drawable="@drawable/bs_dialog_loading8" android:duration="@integer/bs_frame_duration" />
+    <item android:drawable="@drawable/bs_dialog_loading9" android:duration="@integer/bs_frame_duration" />
+    <item android:drawable="@drawable/bs_dialog_loading10" android:duration="@integer/bs_frame_duration" />
+    <item android:drawable="@drawable/bs_dialog_loading11" android:duration="@integer/bs_frame_duration" />
+    <item android:drawable="@drawable/bs_dialog_loading12" android:duration="@integer/bs_frame_duration" />
+</animation-list>

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e1e1e1"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/sv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/h323_status"
+                style="@style/SettingTitleDividerStyle"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 
+                android:orientation="vertical"
+                android:showDividers="middle">
+
+                <RelativeLayout
+                    style="@style/ItemCommonLayoutStyle"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/ItemTileStyle"
+                        android:text="@string/setting_h323_account"/>
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/h323_switch"
+                        style="@style/SwitchStyle"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true">
+                    </android.support.v7.widget.SwitchCompat>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/llyt_323_account_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                         
+                        android:orientation="vertical"
+                        android:showDividers="middle">
+
+                        <LinearLayout
+                            style="@style/ItemCommonLayoutStyle"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/ItemTileStyle"
+                                android:layout_width="148dp"
+                                android:text="@string/account"/>
+
+                            <EditText
+                                android:id="@+id/h323_name"
+                                style="@style/ItemEditTextStyle"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/ItemCommonLayoutStyle"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/ItemTileStyle"
+                                android:layout_width="148dp"
+                                android:text="@string/h323Extension"/>
+
+                            <EditText
+                                android:id="@+id/h323_extension"
+                                style="@style/ItemEditTextStyle"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/ItemCommonLayoutStyle"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/ItemTileStyle"
+                                android:layout_width="148dp"
+                                android:text="@string/h323gka"/>
+
+                            <EditText
+                                android:id="@+id/h323_gka"
+                                android:maxLength="99"
+                                style="@style/ItemEditTextStyle"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        style="@style/HeadDividerStyle"
+                        android:layout_height="20dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                         
+                        android:orientation="vertical"
+                        android:showDividers="middle">
+
+                        <RelativeLayout
+                            style="@style/ItemCommonLayoutStyle"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                style="@style/ItemTileStyle"
+                                android:text="@string/gkSwitch"/>
+
+                            <android.support.v7.widget.SwitchCompat
+                                android:id="@+id/gk_switch"
+                                style="@style/SwitchStyle"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true">
+                            </android.support.v7.widget.SwitchCompat>
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:id="@+id/llyt_gk_username"
+                            style="@style/ItemCommonLayoutStyle"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/ItemTileStyle"
+                                android:layout_width="148dp"
+                                android:text="@string/gkusername"/>
+
+                            <EditText
+                                android:id="@+id/gkuser_name"
+                                style="@style/ItemEditTextStyle"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/llyt_gk_password"
+                            style="@style/ItemCommonLayoutStyle"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/ItemTileStyle"
+                                android:layout_width="148dp"
+                                android:text="@string/gkpassword"/>
+
+                            <EditText
+                                android:id="@+id/gk_password"
+                                style="@style/ItemEditTextStyle"
+                                android:inputType="textPassword"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        style="@style/HeadDividerStyle"
+                        android:layout_height="20dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                         
+                        android:orientation="vertical"
+                        android:showDividers="middle">
+
+                        <RelativeLayout
+                            style="@style/ItemCommonLayoutStyle"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                style="@style/ItemTileStyle"
+                                android:text="@string/h235"/>
+
+                            <android.support.v7.widget.SwitchCompat
+                                android:id="@+id/h235_switch"
+                                style="@style/SwitchStyle"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true">
+                            </android.support.v7.widget.SwitchCompat>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            style="@style/ItemCommonLayoutStyle"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                style="@style/ItemTileStyle"
+                                android:text="@string/h460_swtich"/>
+
+                            <android.support.v7.widget.SwitchCompat
+                                android:id="@+id/h460_switch"
+                                style="@style/SwitchStyle"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true">
+                            </android.support.v7.widget.SwitchCompat>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

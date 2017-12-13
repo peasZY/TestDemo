@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <com.yealink.callscreen.view.AudioVideoLayer
+        android:id="@+id/audioVideoLayer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <FrameLayout
+            android:id="@+id/audioLayerContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.yealink.callscreen.view.VideoPagerView
+            android:id="@+id/videoPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <RelativeLayout
+            android:id="@+id/topOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/orientation_lock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/tk_screenlock_nor"
+            />
+    </com.yealink.callscreen.view.AudioVideoLayer>
+
+    <LinearLayout
+        android:id="@+id/bottom_layer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/time_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:id="@+id/signal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/tk_status_full"
+                />
+            <TextView
+                android:id="@+id/call_timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/tk_time_margin_left"
+                android:textColor="@color/tk_text_white" />
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/video_indicator_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tk_video_indicator_height"
+            android:visibility="gone"
+            >
+            <TextView
+                android:id="@+id/change_screen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/tk_indicator_check_margin_left"
+                android:drawablePadding="@dimen/tk_indicator_check_drawable_padding"
+                android:textColor="@color/tk_text_white"
+                android:textSize="@dimen/tk_check_screen_textsize"
+                />
+            <include
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                layout="@layout/tk_video_indicator"/>
+        </RelativeLayout>
+        <FrameLayout
+            android:id="@+id/overlayMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llyt_hold_by_him"
+        android:layout_width="@dimen/tk_hold_by_him_width"
+        android:layout_height="@dimen/tk_hold_by_him_width"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true"
+        android:background="@drawable/tk_hold_by_him_bg"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iconHoldByHim"
+            style="@style/tk_title_small_icon"
+            android:layout_marginTop="@dimen/tk_hold_by_him_icon_top"
+            android:src="@drawable/tk_icon_hold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/tk_hold_by_him_text_top"
+            android:textColor="@color/tk_white"
+            android:text="@string/tk_hold_tip_call_pause"/>
+    </LinearLayout>
+</RelativeLayout>

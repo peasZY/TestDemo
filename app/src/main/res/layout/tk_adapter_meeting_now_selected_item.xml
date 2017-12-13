@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/tk_contact_item_height"
+    >
+
+    <ImageView 
+        android:id="@+id/contact_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/tk_contact_icon_margin_left"
+        android:layout_centerVertical="true"
+        android:src="@drawable/tk_icon_contact_head_local" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/contact_icon"
+        android:layout_toLeftOf="@+id/btn_remove"
+        android:layout_marginRight="@dimen/tk_contact_icon_margin_left"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/contact_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/tk_contact_icon_margin_left"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textColor="#333333"
+            android:textSize="@dimen/tk_contact_name_text_size" />
+
+        <TextView
+            android:id="@+id/contact_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/tk_contact_icon_margin_left"
+            android:ellipsize="end"
+            android:lines="1"
+            android:scrollHorizontally="true"
+            android:textColor="#999999"
+            android:textSize="@dimen/tk_contact_number_text_size" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/btn_remove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="30dp"
+        android:minWidth="30dp"
+        android:src="@drawable/tk_icon_codec_remove"
+        android:layout_marginRight="@dimen/tk_contact_icon_margin_left"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+
+    <View
+        android:id="@+id/divider1"
+        style="@style/tk_divider"
+        android:layout_marginRight="@dimen/tk_contact_icon_margin_left"
+        android:layout_marginLeft="@dimen/tk_contact_icon_margin_left"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>

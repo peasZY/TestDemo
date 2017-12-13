@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/cloud_pincode"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:digits="0123456789"
+        android:hint="PINCODE"
+        android:maxLength="9"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/cloud_server"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:maxLength="512"
+        android:layout_marginTop="20dp"
+        android:hint="服务器地址"
+        android:imeOptions="flagNoExtractUi"
+        android:inputType="text"/>
+    <TextView
+        android:id="@+id/cloud_status"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:maxLength="512"
+        android:layout_marginTop="20dp" />
+</LinearLayout>

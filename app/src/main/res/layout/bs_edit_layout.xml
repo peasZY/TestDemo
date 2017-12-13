@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical">
+    
+    <EditText
+        android:id="@+id/dropview_edit"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/llyt_icons"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inputType="textNoSuggestions"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/bs_input_padding_left"
+        android:background="@null"
+        android:singleLine="true"    
+        android:imeOptions="flagNoExtractUi"
+        android:textColorHint="@color/bs_text_dark_gray"
+        android:textSize="@dimen/bs_item_text_size"
+        android:textColor="@color/bs_text_dark" />
+    
+    <LinearLayout
+        android:id="@+id/llyt_icons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/bs_clear_btn_left"
+            android:visibility="gone"
+            android:background="@drawable/bs_btn_setting_input_delete"/>
+
+        <ImageView
+            android:id="@+id/drop"
+            android:layout_width="@dimen/bs_clear_btn_width"
+            android:layout_height="@dimen/bs_clear_btn_height"
+            android:layout_marginLeft="@dimen/bs_clear_btn_left"
+            android:background="@drawable/bs_icon_input_arrow_down"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

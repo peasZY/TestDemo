@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/tk_dtmf_margin_left"
+        android:layout_marginRight="@dimen/tk_dtmf_margin_right"
+        android:orientation="vertical"
+        >
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tk_dtmf_edittext_height"
+            android:background="@drawable/tk_bg_dtmf_top"
+            android:focusable="false"
+            android:paddingLeft="@dimen/tk_dtmf_padding"
+            android:paddingRight="@dimen/tk_dtmf_padding"
+            android:singleLine="true"
+            android:textColor="#4d4d4d"
+            android:textSize="@dimen/tk_dtmf_edittext_textsize" />
+
+        <android.support.v7.widget.GridLayout
+            android:id="@+id/bottom_layer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/tk_bg_dtmf_bottom"
+            android:padding="0.5px"
+            app:columnCount="3"
+            app:rowCount="4">
+
+
+            <TextView
+                android:id="@+id/number1"
+                style="@style/tk_dtmf_key"
+                android:text="1"
+                />
+            <TextView
+                android:id="@+id/number2"
+                style="@style/tk_dtmf_key"
+                android:text="2"
+                />
+            <TextView
+                android:id="@+id/number3"
+                style="@style/tk_dtmf_key"
+                android:text="3"
+                />
+            <TextView
+                android:id="@+id/number4"
+                style="@style/tk_dtmf_key"
+                android:text="4"
+                />
+            <TextView
+                android:id="@+id/number5"
+                style="@style/tk_dtmf_key"
+                android:text="5"
+                />
+            <TextView
+                android:id="@+id/number6"
+                style="@style/tk_dtmf_key"
+                android:text="6"
+                />
+            <TextView
+                android:id="@+id/number7"
+                style="@style/tk_dtmf_key"
+                android:text="7"
+                />
+            <TextView
+                android:id="@+id/number8"
+                style="@style/tk_dtmf_key"
+                android:text="8"
+                />
+            <TextView
+                android:id="@+id/number9"
+                style="@style/tk_dtmf_key"
+                android:text="9"
+                />
+            <TextView
+                android:id="@+id/dot"
+                style="@style/tk_dtmf_key"
+                android:background="@drawable/tk_bg_dtmf_bottom_left"
+                android:text="*"
+                />
+            <TextView
+                android:id="@+id/number0"
+                style="@style/tk_dtmf_key"
+                android:text="0"
+                />
+
+            <TextView
+                android:id="@+id/sharp"
+                style="@style/tk_dtmf_key"
+                android:background="@drawable/tk_bg_dtmf_bottom_right"
+                android:text="#"
+                />
+
+
+        </android.support.v7.widget.GridLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#1b2330"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/hangup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/tk_hangup_title_margin_bottom"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/tk_hangup_title_textsize" />
+
+    <TextView
+        android:id="@+id/duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tk_hangup_duration"
+        android:textSize="@dimen/tk_hangup_duration_textsize"
+        android:textColor="#ffffff" />
+
+</LinearLayout>

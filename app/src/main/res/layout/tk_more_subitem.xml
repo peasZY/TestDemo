@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/tk_menu_subitem_height"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/menu_text"
+        android:textColor="@color/tk_text_dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/tk_sub_menu_textsize"
+        />
+
+</LinearLayout>

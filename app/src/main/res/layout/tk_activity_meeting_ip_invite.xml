@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:yl="http://schemas.android.com/apk/res-auto"
+    android:background="@color/tk_white"
+    android:orientation="vertical">
+    <TextView
+
+        android:id="@+id/ip_invite_tip"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tk_ip_invite_tip_height"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/tk_meeting_invite_ip_margin"
+        android:layout_marginRight="@dimen/tk_meeting_invite_ip_margin"
+        android:textSize="@dimen/tk_ip_invite_tip_textsize"
+        android:text="@string/tk_meeting_ip_invite_type_tip"
+        />
+    <com.yealink.base.view.DropEditText
+        android:id="@+id/ed_type"
+        android:layout_below="@+id/ip_invite_tip"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tk_ip_invite_input_line_height"
+        android:textColor="@color/tk_text_dark"
+        android:paddingLeft="@dimen/tk_ip_invite_input_paddingleft"
+        android:textSize="@dimen/tk_setting_item_text_size"
+        android:background="@drawable/tk_input_selector"
+        android:layout_marginLeft="@dimen/tk_meeting_invite_ip_margin"
+        android:layout_marginRight="@dimen/tk_meeting_invite_ip_margin"
+        yl:drawableRight="@drawable/tk_drop_down"
+        yl:dropMode="flow_parent"/>
+    <com.yealink.base.view.ClearEditText
+        android:id="@+id/ed_ip"
+        android:layout_below="@id/ed_type"
+        yl:clearDrawable="@drawable/bs_btn_setting_input_delete"
+        style="@style/tk_edit_text"
+        android:layout_marginLeft="@dimen/tk_meeting_invite_ip_margin"
+        android:layout_marginRight="@dimen/tk_meeting_invite_ip_margin"
+        android:layout_marginTop="@dimen/tk_ip_invite_input_line_margintop"
+        android:maxLength="128"
+        android:hint="@string/tk_meeting_invite_h323_hint"
+        />
+    <View
+        android:id="@+id/bottom_layer"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </View>
+</RelativeLayout>

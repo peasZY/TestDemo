@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root_view"
+    android:background="@color/tk_white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/top_layer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/tk_cs_top_layer_height"
+        android:background="@color/tk_cs_tolayer_bg"
+        android:padding="@dimen/tk_cs_top_layer_padding"
+        android:layout_alignParentTop="true"
+        >
+
+        <TextView
+            android:id="@+id/total_bandwidth"
+            android:includeFontPadding="false"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/tk_cs_total_bandwidth_margin_l"
+            android:text="@string/tk_cs_total_bandwidth"
+            android:textColor="@color/tk_text_white"
+            android:textSize="@dimen/tk_cs_text_size" />
+        <RelativeLayout
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/total_bandwidth"
+            android:gravity="center_horizontal"
+            >
+            <ImageView
+                android:id="@+id/talking_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/tk_status_big5" />
+            <TextView
+                android:id="@+id/cs_send"
+                android:includeFontPadding="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/talking_status"
+                android:textColor="@color/tk_text_white"
+                android:textSize="@dimen/tk_cs_text_size"
+                />
+            <TextView
+                android:id="@+id/cs_recv"
+                android:includeFontPadding="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/talking_status"
+                android:textColor="@color/tk_text_white"
+                android:textSize="@dimen/tk_cs_text_size"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/recv_protocol"
+            android:layout_width="wrap_content"
+            android:includeFontPadding="false"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line2"
+            android:textColor="@color/tk_text_white"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/tk_cs_recv_protocol_margin_t"
+            android:text="@string/tk_cs_protocol_value"
+            android:textSize="@dimen/tk_cs_text_size_small" />
+        <TextView
+            android:id="@+id/recv_dev"
+            android:includeFontPadding="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/tk_cs_recv_dev_margin_t"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/recv_protocol"
+            android:textColor="@color/tk_text_white"
+            android:textSize="@dimen/tk_cs_text_size_small" />
+    </RelativeLayout>
+    <View
+        android:id="@+id/bottom_layer"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </View>
+    <FrameLayout
+        android:id="@+id/statistics_content_container"
+        android:layout_below="@+id/top_layer"
+        android:layout_above="@+id/bottom_layer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+</RelativeLayout>

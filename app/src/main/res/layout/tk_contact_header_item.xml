@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/tk_contact_header_height"
+    android:background="@color/tk_gray_bg" >
+    
+    <TextView
+        android:id="@+id/contacts_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/tk_contact_header_font_margin_left"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/tk_contact_header_text_size"
+        android:textColor="#cccccc" />
+
+</RelativeLayout>

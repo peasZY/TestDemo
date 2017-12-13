@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Sample</string>
+
+    <string name="h323Extension">分机号</string>
+    <string name="h323gka">网守服务器</string>
+    <string name="gkSwitch">网守</string>
+    <string name="gkusername">网守用户名</string>
+    <string name="gkpassword">网守密码</string>
+    <string name="h235">H.235加密</string>
+    <string name="setting_h323_account">H.323</string>
+    <string name="account">用户名</string>
+    <string name="state_disabled">禁用</string>
+    <string name="state">注册状态（%s）</string>
+    <string name="state_unknown">未知</string>
+    <string name="state_reging">正在注册</string>
+    <string name="state_reged">已经注册</string>
+    <string name="state_reg_failed">注册失败</string>
+    <string name="state_unreging">正在注销</string>
+    <string name="state_unreged">未注册</string>
+    <string name="state_reg_on_boot">启动时注册</string>
+    <string name="sip_illegal_hint">输入内容不能包含  &#033; &#038; &#058; &#059; &#060; &#062; &#091; \\ &#093; &#063; &#037;</string>
+    <string name="sip_password_illegal">密码不能够包含  &#058;</string>
+    <string name="save_success">保存成功</string>
+    <string name="save_fail">保存失败</string>
+    <string name="setting_sip_account">SIP账号</string>
+    <string name="setting_sip_direct_dial">SIP直拨</string>
+    <string name="sip_username">用户名</string>
+    <string name="sip_registername">注册名</string>
+    <string name="sip_password">密码</string>
+    <string name="sip_server">服务器</string>
+    <string name="sip_port">端口</string>
+    <string name="outband_active">代理服务器启用</string>
+    <string name="outband_server">代理服务器</string>
+    <string name="outband_port">代理服务器端口</string>
+    <string name="makecall">呼叫</string>
+    <string name="meetnow">立即会议</string>
+    <string name="incoming_notice">停留在此界面时，有来电将跳转到通话界面！</string>
+    <string-array name="sip_protocol">
+        <item>UDP</item>
+        <item>TCP </item>
+        <item>TLS</item>
+        <item>DNS-NAPTR</item>
+    </string-array>
+    <string-array name="sip_bfcp">
+        <item>启用</item>
+        <item>禁用</item>
+    </string-array>
+</resources>

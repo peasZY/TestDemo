@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!--dir name:assets对应的目录,path:文件要复制到JavaInterface.WORK_DIR+"/"+path路径下,forceReplace:是否强制替换资源-->
+	<dir name="config" path="factory/config" forceReplace="true">
+		<file name="account.ini"/>
+		<file name="account_h323.ini"/>
+		<file name="default.ini"/>
+		<file name="h323.ini"/>
+		<file name="ipvp.ini"/>
+		<file name="network.ini"/>
+		<file name="sip.ini"/>
+		<file name="system.ini"/>
+		<file name="tune.ini"/>
+		<file name="user.ini"/>
+	</dir>
+	<dir name="data" path="data" forceReplace="false">
+		<file name="calllog-list.xml"/>
+		<file name="contact-list.xml"/>
+	</dir>
+	<dir name="phone/resource" path="phone/resource" forceReplace="true">
+		<file name="camera-mute"/>
+		<file name="camera-not-exist"/>
+		<file name="camera-open-fail"/>
+		<file name="chars.txt"/>
+		<file name="deviceCompatible.xml"/>
+		<file name="ipvp.tune"/>
+	</dir>
+</resources>

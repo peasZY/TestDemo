@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/tk_setting_item_height"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+    <TextView 
+        android:paddingLeft="@dimen/tk_setting_input_padding_left"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/account_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/tk_setting_item_text_size"
+        />
+    <ImageView 
+        android:id="@+id/account_del_img"
+        android:layout_alignParentRight="true"
+        android:layout_width="@dimen/tk_setting_clear_btn_width"
+        android:layout_height="@dimen/tk_setting_clear_btn_height"
+        android:src="@drawable/tk_icon_delete"
+        />
+</RelativeLayout>

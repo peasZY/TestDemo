@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/volumnLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:padding="@dimen/tk_volumn_layout_padding"
+    android:background="@drawable/tk_volumn_bg"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/volumnIcon"
+        android:layout_width="@dimen/tk_big_icon_size"
+        android:layout_height="@dimen/tk_big_icon_size"
+        android:layout_marginBottom="@dimen/tk_volumn_margin_bottom"
+        android:src="@drawable/tk_vol_nor" />
+
+    <TextView
+        android:id="@+id/volumnText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:shadowColor="#000000"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="1"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/tk_volumn_textsize" />
+
+</LinearLayout>

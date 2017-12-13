@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yealink.callscreen.view.NameContainerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nameContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="@dimen/tk_name_margin_left"
+    android:layout_marginRight="@dimen/tk_name_margin_left"
+    android:layout_marginBottom="@dimen/tk_name_margin_top"
+    android:layout_marginTop="@dimen/tk_name_margin_top" >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/tk_name_height"
+            android:shadowColor="#000000"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/tk_name_textsize"
+            android:gravity="center_vertical"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_marginRight="@dimen/tk_small_icon_margin"/>
+
+        <ImageView
+            android:id="@+id/iconEncrypt"
+            style="@style/tk_title_small_icon"
+            android:src="@drawable/tk_encrypt"
+            android:visibility="gone" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/subhead"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/tk_subhead_height"
+        android:shadowColor="#000000"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/tk_subhead_text"
+        android:gravity="center_vertical"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_marginRight="@dimen/tk_small_icon_margin" />
+
+    <ImageView
+        android:id="@+id/iconMuteByHim"
+        style="@style/tk_title_small_icon"
+        android:src="@drawable/tk_audio_muted"
+        android:visibility="gone" />
+
+</com.yealink.callscreen.view.NameContainerLayout>

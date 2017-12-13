@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yealink.videophone.view.AdjustResizeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tk_gray_bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:id="@+id/layout_search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tk_contact_search_container_height"
+        android:background="?attr/titleBarBackground"
+        >
+        <com.yealink.videophone.view.SearchView
+            android:id="@+id/search_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tk_contact_search_view_height"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/tk_contact_margin_left"
+            android:layout_marginRight="@dimen/tk_contact_margin_left"
+            android:layout_toLeftOf="@+id/btn_cancel"
+            android:background="@drawable/tk_bg_search_edit"
+            android:drawableLeft="@drawable/tk_icon_search"
+            android:drawablePadding="@dimen/tk_contact_search_padding"
+            android:drawableRight="@drawable/tk_icon_clear_selector"
+            android:hint="@string/tk_contacts_search"
+            android:paddingLeft="@dimen/tk_contact_search_padding"
+            android:paddingRight="@dimen/tk_contact_search_padding"
+            android:textColor="@color/tk_text_dark"
+            android:textSize="@dimen/tk_search_view_text_size"/>
+
+        <TextView
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/tk_contact_margin_left"
+            android:text="@string/tk_cancel"
+            android:textColor="?attr/titleMenuTextColor"
+            android:textSize="@dimen/bs_title_left_text_size"
+            />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_below="@+id/layout_search"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"
+       />
+
+    <include
+        layout="@layout/tk_layout_empty"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_below="@+id/layout_search"
+        android:visibility="gone"/>
+    <include
+        android:id="@+id/layout_bottom"
+        layout="@layout/tk_layout_meeting_now_invite_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        />
+</com.yealink.videophone.view.AdjustResizeLayout>

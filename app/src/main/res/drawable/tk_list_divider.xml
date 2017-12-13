@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:left="@dimen/tk_setting_padding_left" android:right="@dimen/tk_setting_padding_left">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/tk_list_press_divider"/>
+            <size android:height="@dimen/tk_divider_height"/>
+        </shape>
+    </item>
+</layer-list>

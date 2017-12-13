@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/tk_statistics_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/tk_stat_title_padding_v"
+            android:paddingLeft="@dimen/tk_stat_title_padding_h"
+            android:paddingRight="@dimen/tk_stat_title_padding_h"
+            android:paddingTop="@dimen/tk_stat_title_padding_v" >
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/tk_stat_name_margin_left"
+                android:layout_marginRight="@dimen/tk_stat_name_margin_right"
+                android:text="@string/tk_cs_name"
+                android:textColor="#4d4d4d"
+                android:textStyle="bold"
+                android:textSize="@dimen/tk_stat_textsize" />
+
+            <TextView
+                android:id="@+id/number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tk_cs_number"
+                android:textColor="#4d4d4d"
+                android:textStyle="bold"
+                android:textSize="@dimen/tk_stat_textsize" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tk_stat_divider"
+            android:background="#e6e6e6" />
+
+        <FrameLayout
+            android:id="@+id/headerContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tk_stat_divider"
+            android:background="#e6e6e6" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true" >
+
+            <LinearLayout
+                android:id="@+id/scrollContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/indicatorContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/tk_dtmf_indicator_container" >
+
+        <ImageView
+            android:id="@+id/indicator"
+            android:layout_width="@dimen/tk_stat_indicator_width"
+            android:layout_height="@dimen/tk_stat_indicator_height"
+            android:src="@drawable/tk_statistics_arrow" />
+    </FrameLayout>
+
+</LinearLayout>

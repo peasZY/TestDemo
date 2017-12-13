@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/talking_menu"
+    style="@style/tk_menu_double_line"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center_vertical"
+        android:layout_weight="1">
+        <View
+            style="@style/tk_menu_space"/>
+
+
+        <Button
+            android:id="@+id/handup"
+            style="@style/tk_menu_icon_double_line"
+            android:text="@string/tk_menu_handup"
+            android:visibility="gone"
+            android:drawableTop="@drawable/tk_menu_handup_press" />
+
+        <ToggleButton
+            android:id="@+id/mute"
+            style="@style/tk_menu_icon_double_line"
+            android:textOff="@string/tk_menu_mute"
+            android:textOn="@string/tk_menu_mute"
+            android:button="@null"
+            android:drawableTop="@drawable/tk_menu_mute" />
+
+        <View
+            android:id="@+id/mute_space"
+            style="@style/tk_menu_space"/>
+
+
+
+        <ToggleButton
+            android:id="@+id/stopVideo"
+            style="@style/tk_menu_icon_double_line"
+            android:textOff="@string/tk_menu_camera"
+            android:textOn="@string/tk_menu_camera"
+            android:visibility="gone"
+            android:drawableTop="@drawable/tk_menu_switch_video" />
+
+        <View
+            android:id="@+id/stopVideo_space"
+            android:visibility="gone"
+            style="@style/tk_menu_space"/>
+
+
+        <Button
+            android:id="@+id/dtmf"
+            style="@style/tk_menu_icon_double_line"
+            android:text="@string/tk_menu_dtmf"
+            android:drawableTop="@drawable/tk_menu_dtmf" />
+        
+        <View 
+            android:id="@+id/dtmf_space"
+            style="@style/tk_menu_space"/>
+
+        <ToggleButton
+            android:id="@+id/switchSpeaker"
+            style="@style/tk_menu_icon_double_line"
+            android:textOff="@string/tk_menu_speaker"
+            android:textOn="@string/tk_menu_speaker"
+            android:drawableTop="@drawable/tk_menu_switch_speaker" />
+
+        <View
+            android:id="@+id/switchSpeaker_space"
+            style="@style/tk_menu_space"/>
+
+        <Button
+            android:id="@+id/more"
+            style="@style/tk_menu_icon_double_line"
+            android:text="@string/tk_menu_more"
+            android:visibility="gone"
+            android:gravity="center"
+            android:drawableTop="@drawable/tk_menu_more" />
+
+        <View
+            android:id="@+id/more_space"
+            android:visibility="gone"
+            style="@style/tk_menu_space"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center_vertical"
+        android:layout_weight="1" >
+
+        <View style="@style/tk_menu_space"/>
+
+        <Button
+            android:id="@+id/hangup"
+            style="@style/tk_menu_icon_double_line"
+            android:text="@string/tk_hangup"
+            android:gravity="center"
+            android:drawableTop="@drawable/tk_menu_hangup" />
+        
+        <View style="@style/tk_menu_space"/>
+    </LinearLayout>
+</LinearLayout>

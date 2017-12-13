@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_search"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/tk_search_view_height"
+    android:background="@drawable/tk_search_view_bg_selector"
+    android:layout_marginBottom="@dimen/tk_search_view_margin_top"
+    android:layout_marginLeft="@dimen/tk_contact_margin_left"
+    android:layout_marginRight="@dimen/tk_contact_margin_left"
+    android:layout_marginTop="@dimen/tk_search_view_margin_top"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/tk_icon_search"
+        android:drawablePadding="@dimen/tk_search_view_drawable_padding"
+        android:text="@string/tk_contacts_search"
+        android:textColor="#b3b3b3"
+        android:textSize="@dimen/tk_search_view_text_size"
+        />
+</LinearLayout>

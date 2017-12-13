@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.yealink.sample.MainActivity">
+    <item
+        android:id="@+id/save"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="保存" />
+</menu>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/bs_dialog_bg"
+              android:padding="0dp"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bs_dialog_message_height"
+        android:gravity="center"
+        android:textColor="@color/bs_text_black"
+        android:textSize="@dimen/bs_dialog_btn_text_size"/>
+
+    <View style="@style/bs_DividerStyle"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bs_dialog_btn_height"
+        android:divider="@drawable/bs_dialog_button_divider"
+        android:padding="0dp"
+        android:orientation="horizontal"
+        android:showDividers="middle">
+
+        <TextView
+            android:id="@+id/button_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:background="@null"
+            android:singleLine="true"
+            android:text="@string/bs_cancel"
+            android:textColor="@color/bs_dialog_button_text"
+            android:textSize="@dimen/bs_dialog_btn_text_size"/>
+
+        <TextView
+            android:id="@+id/button_ok"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:background="@null"
+            android:singleLine="true"
+            android:text="@string/bs_confirm"
+            android:textColor="@color/bs_dialog_button_text"
+            android:textSize="@dimen/bs_dialog_btn_text_size"/>
+    </LinearLayout>
+
+</LinearLayout>

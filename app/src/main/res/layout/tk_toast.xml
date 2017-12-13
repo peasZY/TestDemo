@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/toast_window"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="@dimen/tk_toast_margin_t"
+    android:paddingLeft="@dimen/bs_toast_padding_left"
+    android:paddingRight="@dimen/bs_toast_padding_right"
+    android:paddingTop="@dimen/bs_toast_padding_top"
+    android:paddingBottom="@dimen/bs_toast_padding_bottom"
+    android:background="@drawable/bs_tips_bg">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tk_toast_msg"
+        android:textSize="@dimen/bs_toast_textsize"
+        android:textColor="#ffffff" />
+    <TextView
+        android:id="@+id/toast_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/bs_toast_textsize"
+        android:text="@string/tk_toast_invite"
+        android:textColor="@color/tk_text_blue_color" />
+</LinearLayout>

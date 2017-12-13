@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/tk_incoming_butnbar_margin_bottom"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/hangup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/tk_incoming_butn_horizen_margin"
+        android:layout_marginRight="@dimen/tk_incoming_butn_horizen_margin"
+        android:textSize="@dimen/tk_incoming_butn_text_size"
+        android:textColor="@color/tk_text_white"
+        android:gravity="center"
+        android:text="@string/tk_hangup"
+        android:drawablePadding="@dimen/tk_incoming_butn_drawable_padding"
+        android:drawableTop="@drawable/tk_talk_butn_hangup"/>
+
+
+    <TextView
+        android:id="@+id/pickup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/tk_incoming_butn_horizen_margin"
+        android:layout_marginRight="@dimen/tk_incoming_butn_horizen_margin"
+        android:textColor="@color/tk_text_white"
+        android:text="@string/tk_pickup"
+        android:gravity="center"
+        android:drawablePadding="@dimen/tk_incoming_butn_drawable_padding"
+        android:textSize="@dimen/tk_incoming_butn_text_size"
+        android:drawableTop="@drawable/tk_butn_pickup" />
+</LinearLayout>

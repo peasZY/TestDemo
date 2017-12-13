@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/bs_white"/>
+    <corners android:radius="@dimen/bs_button_bg_corner_radius"/>
+    <stroke android:color="@color/bs_list_press_divider" android:width="@dimen/bs_input_stroke_width"/>
+</shape>

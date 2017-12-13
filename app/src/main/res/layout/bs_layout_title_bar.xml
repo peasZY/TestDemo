@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_bar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="?attr/titleBarBackground"
+    android:gravity="center_vertical">
+
+    <RelativeLayout
+        android:id="@+id/title_rl_left"
+        android:layout_width="wrap_content"
+        android:layout_height="?attr/actionBarSize"
+        android:paddingLeft="@dimen/bs_title_bar_padding_left"
+        android:paddingRight="@dimen/bs_title_bar_padding_right"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        >
+        <ImageView
+            android:id="@+id/left_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:duplicateParentState="true"
+            android:src="?attr/titleBarBackIcon"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/left_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:duplicateParentState="true"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/left_btn"
+            android:textColor="?attr/titleMenuTextColor"
+            android:textSize="@dimen/bs_title_left_text_size"
+            android:text="@string/bs_back"
+            android:layout_marginLeft="4dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:maxWidth="84dp"
+            android:visibility="visible"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/btn_close"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:layout_toRightOf="@+id/title_rl_left"
+        android:textColor="?attr/titleMenuTextColor"
+        android:textSize="@dimen/bs_title_left_text_size"
+        android:text="@string/bs_close"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:clickable="true"
+        android:visibility="gone"/>
+    <RelativeLayout
+        android:id="@+id/title_rl_center"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/btn_close"
+        android:layout_marginRight="@dimen/bs_title_bar_margin_right">
+        <include layout="@layout/bs_layout_title_text"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/title_rl_right"
+        android:layout_width="wrap_content"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:paddingRight="@dimen/bs_title_bar_padding_right"
+        android:paddingLeft="@dimen/bs_title_bar_padding_left">
+
+        <ImageView
+            android:id="@+id/right_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            android:duplicateParentState="true"/>
+
+        <TextView
+            android:id="@+id/right_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:duplicateParentState="true"
+            android:gravity="center"
+            android:textColor="?attr/titleMenuTextColor"
+            android:textSize="@dimen/bs_title_left_text_size"
+            android:visibility="visible"/>
+    </RelativeLayout>
+</RelativeLayout>

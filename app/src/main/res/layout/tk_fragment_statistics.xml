@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/tk_cs_item_padding_bottom"
+        android:paddingLeft="@dimen/tk_cs_item_padding_left"
+        android:paddingTop="@dimen/tk_cs_item_padding_top">
+
+        <View
+            android:id="@+id/blank"
+            android:layout_width="0px"
+            android:layout_height="1px"
+            android:layout_weight="30" />
+
+
+        <TextView
+            android:id="@+id/send_head"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="35"
+            android:text="@string/tk_cs_tab_send"
+            android:textColor="@color/tk_text_dark"
+            android:textSize="@dimen/tk_cs_tab_text_size" />
+
+        <TextView
+            android:id="@+id/recv_head"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="35"
+            android:text="@string/tk_cs_tab_recv"
+            android:textColor="@color/tk_text_dark"
+            android:textSize="@dimen/tk_cs_tab_text_size" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/tk_divider" />
+
+    <com.yealink.callscreen.view.TalkingStatisticsListView
+        android:id="@+id/talking_statistics_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:footerDividersEnabled="true"
+        android:headerDividersEnabled="true">
+
+    </com.yealink.callscreen.view.TalkingStatisticsListView>
+</LinearLayout>
